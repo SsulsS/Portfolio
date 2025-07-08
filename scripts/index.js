@@ -26,22 +26,45 @@
       });
     }
 
-    // Показать больше проектов
+    // Плавное появление/скрытие проектов
     const btn = document.getElementById('showMoreProjects');
     const hiddenCards = document.querySelectorAll('.project-card--hidden');
     let shown = false;
     if (btn) {
+      // Скрыть по умолчанию с анимацией
+      hiddenCards.forEach(card => {
+        card.style.maxHeight = '0';
+        card.style.overflow = 'hidden';
+        card.style.opacity = '0';
+        card.style.transition = 'max-height 0.5s cubic-bezier(.4,0,.2,1), opacity 0.5s cubic-bezier(.4,0,.2,1)';
+        card.style.display = 'block';
+      });
       btn.addEventListener('click', function() {
         if (!shown) {
-          hiddenCards.forEach(card => card.style.display = 'block');
+          hiddenCards.forEach(card => {
+            card.style.display = 'block';
+            card.style.maxHeight = card.scrollHeight + 'px';
+            card.style.opacity = '1';
+          });
           btn.textContent = 'скрыть дополнительные проекты';
           shown = true;
         } else {
-          hiddenCards.forEach(card => card.style.display = 'none');
+          hiddenCards.forEach(card => {
+            card.style.maxHeight = '0';
+            card.style.opacity = '0';
+            setTimeout(() => {
+              if (!shown) card.style.display = 'none';
+            }, 500);
+          });
           btn.textContent = 'показать больше проектов';
           shown = false;
         }
       });
-      hiddenCards.forEach(card => card.style.display = 'none');
+      // Скрыть по умолчанию после первой отрисовки
+      setTimeout(() => {
+        hiddenCards.forEach(card => {
+          card.style.display = 'none';
+        });
+      }, 10);
     }
   });
