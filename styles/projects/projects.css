@@ -19,6 +19,24 @@
   justify-content: center;
 }
 
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-card:nth-child(n+3) {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-card:nth-child(n+2) {
+    display: none;
+  }
+}
+
 .project-card {
   
   background: #fff;

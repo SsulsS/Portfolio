@@ -1,4 +1,4 @@
-/* Перемещено из styles/contcats/contact.css */
+
 .contact {
   text-align: center;
   padding: 4rem 1rem;
@@ -8,7 +8,7 @@
   font-size: 1.5rem;
   text-transform: lowercase;
   margin-bottom: 2rem;
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid #222;
   display: inline-block;
   padding-bottom: 0.5rem;
 }
@@ -19,7 +19,6 @@
   gap: 2rem;
   margin: 2rem 0;
 }
-
 
 .social-icon {
   width: 40px;
@@ -37,19 +36,4 @@
   box-shadow: 0 4px 16px rgba(0,0,0,0.10);
 }
 
-.icon.red {
-  background: red;
-}
-.icon.blue {
-  background: #0077b5;
-}
-.icon.black {
-  background: #000;
-}
-.icon.dark {
-  background: #333;
-}
-.icon.pink {
-  background: #ea4c89;
-}
 
