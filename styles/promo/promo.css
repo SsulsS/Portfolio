@@ -1,0 +1,15 @@
+.promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.promo__title {
+}
+
+.promo__dark-mode {
+    font-weight: 900;
+    align-self: flex-end;
+    justify-self: end;
+}

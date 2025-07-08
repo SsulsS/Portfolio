@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="icon" type="image/svg+xml" href="./images/icons/logo.svg" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/menu/menu.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <a href="#promo" class="header__logo-link">
+        <img src="./images/icons/logo.svg" alt="логотип" class="header__logo" />  
+      </a>
+      <button class="header__burger" id="burgerBtn" aria-label="Открыть меню">
+        <img src="./images/icons/hamburger.svg" alt="Меню">
+      </button>
+      <nav class="header__nav" id="headerNav">
+        <ul class="header__nav-list">
+          <li><a href="#about-me" class="header__nav-link">Обо мне</a></li>
+          <li><a href="#skills" class="header__nav-link">Опыт</a></li>
+          <li><a href="#projects" class="header__nav-link">Проекты</a></li>
+          <li><a href="#contact" class="header__nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const burger = document.getElementById('burgerBtn');
+        const nav = document.getElementById('headerNav');
+        let navOpen = false;
+        if (burger && nav) {
+          burger.addEventListener('click', function() {
+            navOpen = !navOpen;
+            nav.classList.toggle('header__nav--open', navOpen);
+            burger.classList.toggle('header__burger--active', navOpen);
+          });
+          document.addEventListener('click', function(e) {
+            if (navOpen && !nav.contains(e.target) && !burger.contains(e.target)) {
+              nav.classList.remove('header__nav--open');
+              burger.classList.remove('header__burger--active');
+              navOpen = false;
+            }
+          });
+        }
+      });
+    </script>
+      <section class="promo" id="promo"> 
+        <h1 class="promo__title">front-end. web (developer)<span class="cursor">_</span></h1>
+      </section>
+
+
+      <section class="about" id="about-me">
+        <h2 class="about__title">Обо мне</h2>
+        <div class="about__profile">
+          <img src="./images/avatar.jpg" alt="Фото Чёрного Дмитрия" class="about__avatar" />
+          <div class="about__info">
+            <h3 class="about__name">Чёрный Дмитрий</h3>
+            <p class="about__desc">
+              Привет! Я — фронтенд-разработчик, который любит создавать современные, быстрые и удобные интерфейсы. Для меня важны детали, логика и смысл — от первого пикселя до последней строки кода. Верю, что хороший продукт начинается с простоты, а развивается через постоянное улучшение.
+            </p>
+            <p class="about__desc">
+              Моя цель — расти в профессии, углублять знания и делать вклад в сильные, живые продукты. Я открыт к новым задачам, всегда учусь и стремлюсь к развитию.
+            </p>
+         <div class="about__links">
+           <a href="https://t.me/chdm25" target="_blank" rel="noopener" class="about__link">Telegram</a>
+           <a href="https://github.com/SsulsS" target="_blank" rel="noopener" class="about__link">GitHub</a>
+           <a href="mailto:d_chernyy01@mail.ru" target="_blank" rel="noopener" class="about__link">Email</a>
+         </div>
+          </div>
+        </div>
+
+        
+
+
+      </section>
+
+
+      <section class="skills" id="skills">
+        <h2 class="skills__title">Опыт</h2>
+        <div class="skills__columns">
+          <div class="skills__column">
+            <h3 class="skills__column-title">Образование</h3>
+
+            
+            <div class="skills__item">
+              <div class="skills__item-org">Яндекс Практикум</div>
+              <div class="skills__item-role">Веб-разработка (2021 — 2022)</div>
+              <ul class="skills__item-list">
+                <li>HTML5, CSS3, JavaScript (ES6+), React, Git</li>
+                <li>Проектирование интерфейсов, работа с API, адаптивная вёрстка</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills__column">
+            <h3 class="skills__column-title">Опыт работы</h3>
+            <div class="skills__item">
+              <div class="skills__item-org">Pay2Me</div>
+              <div class="skills__item-role">Junior front-end / Разработчик (2023 — н.в.)</div>
+              <ul class="skills__item-list">
+                <li>Разработка стандартных ритуалов для гигиеничных процессов, автоматизация задач</li>
+                <li>Миграция компонентов, настройка инфраструктуры, поддержка корпоративных решений</li>
+                <li>Создание и поддержка скриптов для автоматизации публикаций и обновлений</li>
+                <li>Работа для автоматизации рабочих процессов</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2>личные проекты</h2>
+        <div class="projects-grid" id="projectsGrid">
+          <div class="project-card ">
+            <div class="project-thumb"><span class="project-thumb__text">Скоро тут будут фото</span></div>
+            <div class="project-info">
+              <h3><a href="https://github.com/SsulsS/react-mesto-auth" target="_blank" rel="noopener"><strong>react-mesto-auth</strong></a></h3>
+              <p>Проект с регистрацией и авторизацией пользователей, интеграцией с сервером и валидацией форм.</p>
+              <div class="tags">
+                <span>react</span>
+                <span>js</span>
+                <span>auth</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb"><span class="project-thumb__text">Скоро тут будут фото</span></div>
+            <div class="project-info">
+              <h3><a href="https://github.com/SsulsS/ya-mesto" target="_blank" rel="noopener"><strong>ya-mesto</strong></a></h3>
+              <p>Интерактивная галерея с авторизацией, лайками, редактированием профиля и загрузкой изображений.</p>
+              <div class="tags">
+                <span>react</span>
+                <span>js</span>
+                <span>api</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-thumb"><span class="project-thumb__text">Скоро тут будут фото</span></div>
+            <div class="project-info">
+              <h3><a href="https://github.com/SsulsS/ya-news-explorer" target="_blank" rel="noopener"><strong>ya-news-explorer</strong></a></h3>
+              <p>Поиск и сохранение новостей по ключевым словам. Работа с внешним API, адаптивная вёрстка, авторизация.</p>
+              <div class="tags">
+                <span>js</span>
+                <span>api</span>
+                <span>html</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-card project-card--hidden">
+            <div class="project-thumb"><span class="project-thumb__text">Скоро тут будут фото</span></div>
+            <div class="project-info">
+              <h3><a href="https://github.com/SsulsS/portfolio" target="_blank" rel="noopener"><strong>portfolio</strong></a></h3>
+              <p>Личный сайт-портфолио. Современный дизайн, адаптивная вёрстка, чистый код, BEM, SCSS, анимации.</p>
+              <div class="tags">
+                <span>html</span>
+                <span>css</span>
+                <span>js</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card project-card--hidden">
+            <div class="project-thumb"><span class="project-thumb__text">Скоро тут будут фото</span></div>
+            <div class="project-info">
+              <h3><a href="https://github.com/SsulsS/react-burger" target="_blank" rel="noopener"><strong>react-burger</strong></a></h3>
+              <p>Учебный проект: сборка бургера, drag&drop, авторизация, работа с WebSocket, тесты.</p>
+              <div class="tags">
+                <span>react</span>
+                <span>redux</span>
+                <span>ws</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card project-card--hidden">
+            <div class="project-thumb"><span class="project-thumb__text">Скоро тут будут фото</span></div>
+            <div class="project-info">
+              <h3><a href="https://github.com/SsulsS/russian-travel" target="_blank" rel="noopener"><strong>russian-travel</strong></a></h3>
+              <p>Лендинг о путешествиях по России. Адаптивная вёрстка, Grid, Flexbox, чистый CSS.</p>
+              <div class="tags">
+                <span>html</span>
+                <span>css</span>
+                <span>adaptive</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card project-card--hidden">
+            <div class="project-thumb"><span class="project-thumb__text">Скоро тут будут фото</span></div>
+            <div class="project-info">
+              <h3><a href="https://github.com/SsulsS/how-to-learn" target="_blank" rel="noopener"><strong>how-to-learn</strong></a></h3>
+              <p>Учебный проект: сайт о техниках обучения. Адаптивная вёрстка, анимации, семантика.</p>
+              <div class="tags">
+                <span>html</span>
+                <span>css</span>
+                <span>animation</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card project-card--hidden">
+            <div class="project-thumb"><span class="project-thumb__text">Скоро тут будут фото</span></div>
+            <div class="project-info">
+              <h3><a href="https://github.com/SsulsS/mesto" target="_blank" rel="noopener"><strong>mesto</strong></a></h3>
+              <p>Учебный проект: галерея с лайками, попапами, валидацией форм и работой с API.</p>
+              <div class="tags">
+                <span>js</span>
+                <span>api</span>
+                <span>html</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more-projects">
+          <button id="showMoreProjects" type="button">показать больше проектов</button>
+        </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.getElementById('showMoreProjects');
+        const hiddenCards = document.querySelectorAll('.project-card--hidden');
+        let shown = false;
+        if (btn) {
+          btn.addEventListener('click', function() {
+            if (!shown) {
+              hiddenCards.forEach(card => card.style.display = 'block');
+              btn.textContent = 'скрыть дополнительные проекты';
+              shown = true;
+            } else {
+              hiddenCards.forEach(card => card.style.display = 'none');
+              btn.textContent = 'показать больше проектов';
+              shown = false;
+            }
+          });
+          hiddenCards.forEach(card => card.style.display = 'none');
+        }
+      });
+    </script>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>связаться со мной</h2>
+        <div class="social-icons">
+          <a href="https://t.me/chdm25" target="_blank" rel="noopener">
+            <img src="./images/icons/contacts/telegram.svg" alt="Telegram" class="social-icon" />
+          </a>
+          <a href="https://github.com/SsulsS" target="_blank" rel="noopener">
+            <img src="./images/icons/contacts/github.svg" alt="GitHub" class="social-icon" />
+          </a>
+          <a href="mailto:d_chernyy01@mail.ru" target="_blank" rel="noopener">
+            <img src="./images/icons/contacts/email.svg" alt="Email" class="social-icon" />
+          </a>
+        </div>
+        
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="#promo">
+        <img src="./images/icons/logo.svg" alt="логотип" class="footer__logo" style="width: 60px;">
+      </a>
+      <div class="footer__container">
+        <a href="https://www.figma.com/design/rmsraijkVpzKdJjOyX3qpT/Portfolio-Frontend-Minimal--Community-?node-id=0-1&t=yIW2YSFANmlmfk4k-1" class="footer__link">Дизайн</a>
+        <p class="footer__txt">Код - я</p>
+      </div>
+    </footer>
+  </body>
+</html>

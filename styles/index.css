@@ -1,0 +1,18 @@
+@import url("../vendor/normalize.css");
+@import url("./header/header.css");
+@import url("./nav/nav.css");
+@import url("./promo/promo.css");
+@import url("./hero/hero.css");
+@import url("./about/about.css");
+@import url("./projects/projects.css");
+@import url("./contacts/contact.css");
+@import url("./footer/footer.css");
+
+.page {
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.content {
+  padding: 0 100px;
+}
