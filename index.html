@@ -29,14 +29,41 @@
 
     <main class="content">
       <script src="./scripts/index.js"></script>
+      <script src="./scripts/copy-email.js"></script>
       <section class="promo" id="promo">
         <h1 class="promo__title">
           front-end. web (developer)<span class="cursor">_</span>
         </h1>
-        <div class="promo__arrow" style="margin-left: 0; margin-right: 0; display: flex; justify-content: center;">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M20 10V30" stroke="#222" stroke-width="3" stroke-linecap="round"/>
-            <path d="M12 22L20 30L28 22" stroke="#222" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <div
+          class="promo__arrow"
+          style="
+            margin-left: 0;
+            margin-right: 0;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M20 10V30"
+              stroke="#222"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path
+              d="M12 22L20 30L28 22"
+              stroke="#222"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
         </div>
       </section>
@@ -50,7 +77,7 @@
             class="about__avatar"
           />
           <div class="about__info">
-            <h3 class="about__name">Чёрный Дмитрий</h3>
+            <h3 class="about__name">Дмитрий Чёрный</h3>
             <p class="about__desc">
               Привет! Я — фронтенд-разработчик, который любит создавать
               современные, быстрые и удобные интерфейсы. Для меня важны детали,
@@ -129,6 +156,37 @@
                 </li>
                 <li>Работа для автоматизации рабочих процессов</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tech" id="tech">
+        <h2 class="tech__title">Технологии и инструменты</h2>
+        <div class="tech__columns">
+          <div class="tech__column">
+            <div class="tech__block">
+              <div class="tech__block-title">Frontend:</div>
+              <div class="tech__tags">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span
+                ><span>React</span><span>Redux</span><span>TypeScript</span
+                ><span>Webpack</span><span>BEM</span><span>SCSS</span
+                ><span>Bootstrap</span><span>Figma</span>
+              </div>
+            </div>
+            <div class="tech__block">
+              <div class="tech__block-title">Инструменты:</div>
+              <div class="tech__tags">
+                <span>VS Code</span><span>Git</span><span>GitHub</span
+                ><span>Postman</span><span>MongoDB Compass</span>
+              </div>
+            </div>
+            <div class="tech__block">
+              <div class="tech__block-title">Soft skills:</div>
+              <div class="tech__tags">
+                <span>Командная работа</span><span>Ведение проектов</span
+                ><span>Аналитика</span><span>Самообучение</span>
+              </div>
             </div>
           </div>
         </div>

@@ -34,7 +34,7 @@ body {
 
 .top-right {
   text-align: right;
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .side-nav.left,
@@ -44,7 +44,7 @@ body {
   display: flex;
   align-items: center;
   padding: 1rem;
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .side-nav.left ul {
@@ -65,7 +65,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 1.8rem;
+  font-size: 29px;
   font-weight: normal;
 }
 
