@@ -1,10 +1,24 @@
+
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 100px;
   background-color: #f1f1f1;
+}
 
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 2vw;
+  }
+  .footer__logo {
+    width: 38px;
+  }
+  .footer__txt {
+    font-size: 11px;
+  }
 }
 
 .footer__logo {

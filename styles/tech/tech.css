@@ -1,0 +1,143 @@
+/* --- TECH SECTION: строгий минимализм, как на примере --- */
+.tech {
+  padding: 64px 16px;
+  background: #fafafa;
+}
+
+/* Стилизация заголовка tech в едином стиле с остальными секциями */
+/* --- TECH SECTION H2: стиль как у других секций --- */
+ /* --- TECH SECTION H2: стиль как у других секций, фикс для полосы --- */
+/* --- TECH SECTION H2: уменьшенный заголовок --- */
+.tech__title {
+  text-transform: lowercase;
+  font-size: 22px;
+  margin-bottom: 32px;
+  border-left: 5px solid black;
+  padding-left: 16px;
+}
+
+
+.tech__columns {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.tech__column {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  min-width: 260px;
+  max-width: 600px;
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border: none;
+  margin: 0 auto;
+}
+
+.tech__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.tech__icon {
+  font-size: 24px;
+}
+
+.tech__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #181818;
+}
+
+.tech__block {
+  margin-bottom: 18px;
+}
+
+.tech__block-title {
+  font-size: 18px;
+
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.tech__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech__tags span {
+  background: #ededed;
+  color: #222;
+  font-size: 15px;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  box-shadow: none;
+  border: none;
+  transition: background 0.15s, color 0.15s;
+  cursor: default;
+  user-select: none;
+}
+
+.tech__tags span:hover {
+  background: #e0e0e0;
+  color: #181818;
+}
+
+.tech__block + .tech__block {
+  border-top: 2px solid #e0e0e0;
+  padding-top: 18px;
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .tech__columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tech__column {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech {
+    padding: 8px 2vw 4px 2vw;
+  }
+  .tech__title {
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    border-left-width: 3px;
+  }
+  .tech__block-title {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  .tech__tags {
+    gap: 4px;
+  }
+  .tech__tags span {
+    font-size: 11px;
+    padding: 4px 7px;
+    border-radius: 4px;
+  }
+  .tech__column {
+    min-width: 0;
+    padding: 0;
+    gap: 18px;
+  }
+  .tech__block + .tech__block {
+    padding-top: 7px;
+  }
+}
