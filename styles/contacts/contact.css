@@ -1,7 +1,7 @@
-
 .contact {
   text-align: center;
   padding: 64px 16px;
+}
 
 @media (max-width: 600px) {
   .contact {
@@ -47,13 +47,11 @@
   object-fit: contain;
   border-radius: 8px;
   transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .social-icon:hover,
 .social-icon:focus {
   transform: scale(1.12) translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
-
-

@@ -143,16 +143,16 @@
               </div>
               <ul class="skills__item-list">
                 <li>
-                  Разработка стандартных ритуалов для гигиеничных процессов,
-                  автоматизация задач
+                  Разработка компонентов и интерфейсов корпоративного продукта
+                  на React + TypeScript
                 </li>
                 <li>
-                  Миграция компонентов, настройка инфраструктуры, поддержка
-                  корпоративных решений
+                  Интеграция с REST API, работа с формами, фильтрами, таблицами,
+                  авторизацией
                 </li>
                 <li>
-                  Создание и поддержка скриптов для автоматизации публикаций и
-                  обновлений
+                  Использование Redux Toolkit для управления состоянием и
+                  бизнес-логикой
                 </li>
                 <li>Работа для автоматизации рабочих процессов</li>
               </ul>
@@ -197,194 +197,372 @@
         <div class="projects-grid" id="projectsGrid">
           <div class="project-card">
             <div class="project-thumb">
-              <span class="project-thumb__text">Скоро тут будут фото</span>
+              <img
+                src="./images/personal-account.png"
+                alt="Personal Account preview"
+                class="project-thumb__img"
+              />
+              <span class="project-thumb__text">personal-account</span>
             </div>
             <div class="project-info">
-              <h3>
-                <a
-                  href="https://github.com/SsulsS/react-mesto-auth"
-                  target="_blank"
-                  rel="noopener"
-                  ><strong>react-mesto-auth</strong></a
+              <h3><strong>personal-account</strong></h3>
+              <p>Личный кабинет. TypeScript, современные подходы.</p>
+              <div class="tags"><span>typescript</span></div>
+              <div class="project-actions">
+                <hr class="project-actions__divider" />
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="window.open('https://github.com/SsulsS/personal-account','_blank')"
+                  title="GitHub"
                 >
-              </h3>
-              <p>
-                Проект с регистрацией и авторизацией пользователей, интеграцией
-                с сервером и валидацией форм.
-              </p>
-              <div class="tags">
-                <span>react</span>
-                <span>js</span>
-                <span>auth</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.867 8.166 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.37-1.342-3.37-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.646.35-1.088.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.025 2.747-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.135 20.174 22 16.426 22 12.012 22 6.484 17.523 2 12 2Z" fill="#222"/></svg>
+                  GitHub
+                </button>
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="alert('Ссылка на сайт недоступна в демо')"
+                  title="Сайт"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2"/><path d="M2 12h20M12 2c3.5 4.5 3.5 15 0 20M12 2c-3.5 4.5-3.5 15 0 20" stroke="#222" stroke-width="2"/></svg>
+                  Сайт
+                </button>
               </div>
             </div>
           </div>
           <div class="project-card">
             <div class="project-thumb">
-              <span class="project-thumb__text">Скоро тут будут фото</span>
+              <img
+                src="./images/portfolio.png"
+                alt="Portfolio preview"
+                class="project-thumb__img"
+              />
+              <span class="project-thumb__text">Portfolio</span>
             </div>
             <div class="project-info">
-              <h3>
-                <a
-                  href="https://github.com/SsulsS/ya-mesto"
-                  target="_blank"
-                  rel="noopener"
-                  ><strong>ya-mesto</strong></a
-                >
-              </h3>
+              <h3><strong>Portfolio</strong></h3>
               <p>
-                Интерактивная галерея с авторизацией, лайками, редактированием
-                профиля и загрузкой изображений.
+                Личный сайт-портфолио. Современный дизайн, адаптивная вёрстка,
+                чистый код.
               </p>
               <div class="tags">
-                <span>react</span>
-                <span>js</span>
-                <span>api</span>
+                <span>html</span><span>css</span><span>js</span>
+              </div>
+              <div class="project-actions">
+                <hr class="project-actions__divider" />
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="window.open('https://github.com/SsulsS/Portfolio','_blank')"
+                  title="GitHub"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.867 8.166 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.37-1.342-3.37-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.646.35-1.088.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.025 2.747-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.135 20.174 22 16.426 22 12.012 22 6.484 17.523 2 12 2Z" fill="#222"/></svg>
+                  GitHub
+                </button>
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="alert('Ссылка на сайт недоступна в демо')"
+                  title="Сайт"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2"/><path d="M2 12h20M12 2c3.5 4.5 3.5 15 0 20M12 2c-3.5 4.5-3.5 15 0 20" stroke="#222" stroke-width="2"/></svg>
+                  Сайт
+                </button>
               </div>
             </div>
           </div>
           <div class="project-card">
             <div class="project-thumb">
-              <span class="project-thumb__text">Скоро тут будут фото</span>
+              <img
+                src="./images/mesto.png"
+                alt="Mesto React preview"
+                class="project-thumb__img"
+              />
+              <span class="project-thumb__text">mesto-react</span>
             </div>
             <div class="project-info">
-              <h3>
-                <a
-                  href="https://github.com/SsulsS/ya-news-explorer"
-                  target="_blank"
-                  rel="noopener"
-                  ><strong>ya-news-explorer</strong></a
+              <h3><strong>mesto-react</strong></h3>
+              <p>Фронтенд проекта Mesto на React.</p>
+              <div class="tags"><span>react</span><span>css</span></div>
+              <div class="project-actions">
+                <hr class="project-actions__divider" />
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="window.open('https://github.com/SsulsS/mesto-react','_blank')"
+                  title="GitHub"
                 >
-              </h3>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.867 8.166 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.37-1.342-3.37-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.646.35-1.088.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.025 2.747-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.135 20.174 22 16.426 22 12.012 22 6.484 17.523 2 12 2Z" fill="#222"/></svg>
+                  GitHub
+                </button>
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="alert('Ссылка на сайт недоступна в демо')"
+                  title="Сайт"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2"/><path d="M2 12h20M12 2c3.5 4.5 3.5 15 0 20M12 2c-3.5 4.5-3.5 15 0 20" stroke="#222" stroke-width="2"/></svg>
+                  Сайт
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card project-card--hidden">
+            <div class="project-thumb">
+              <img
+                src="./images/mesto.png"
+                alt="Mesto preview"
+                class="project-thumb__img"
+              />
+              <span class="project-thumb__text">mesto</span>
+            </div>
+            <div class="project-info">
+              <h3><strong>mesto</strong></h3>
               <p>
-                Поиск и сохранение новостей по ключевым словам. Работа с внешним
-                API, адаптивная вёрстка, авторизация.
+                Проект: Место. Галерея с лайками, попапами, валидацией форм и
+                работой с API.
               </p>
               <div class="tags">
-                <span>js</span>
-                <span>api</span>
-                <span>html</span>
+                <span>js</span><span>api</span><span>html</span>
+              </div>
+              <div class="project-actions">
+                <hr class="project-actions__divider" />
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="window.open('https://github.com/SsulsS/mesto','_blank')"
+                  title="GitHub"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.867 8.166 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.37-1.342-3.37-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.646.35-1.088.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.025 2.747-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.135 20.174 22 16.426 22 12.012 22 6.484 17.523 2 12 2Z" fill="#222"/></svg>
+                  GitHub
+                </button>
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="alert('Ссылка на сайт недоступна в демо')"
+                  title="Сайт"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2"/><path d="M2 12h20M12 2c3.5 4.5 3.5 15 0 20M12 2c-3.5 4.5-3.5 15 0 20" stroke="#222" stroke-width="2"/></svg>
+                  Сайт
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card project-card--hidden">
+            <div class="project-thumb">
+              <img src="./images/how-to-learn.png" alt="How to learn preview" class="project-thumb__img" />
+              <span class="project-thumb__text">how-to-learn</span>
+            </div>
+            <div class="project-info">
+              <h3><strong>how-to-learn</strong></h3>
+              <p>
+                Учебный проект: сайт о техниках обучения. Адаптивная вёрстка,
+                анимации, семантика.
+              </p>
+              <div class="tags">
+                <span>html</span><span>css</span><span>animation</span>
+              </div>
+              <div class="project-actions">
+                <hr class="project-actions__divider" />
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="window.open('https://github.com/SsulsS/how-to-learn','_blank')"
+                  title="GitHub"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.867 8.166 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.37-1.342-3.37-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.646.35-1.088.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.025 2.747-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.135 20.174 22 16.426 22 12.012 22 6.484 17.523 2 12 2Z" fill="#222"/></svg>
+                  GitHub
+                </button>
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="alert('Ссылка на сайт недоступна в демо')"
+                  title="Сайт"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2"/><path d="M2 12h20M12 2c3.5 4.5 3.5 15 0 20M12 2c-3.5 4.5-3.5 15 0 20" stroke="#222" stroke-width="2"/></svg>
+                  Сайт
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card project-card--hidden">
+            <div class="project-thumb">
+              <img
+                src="./images/russian-travel.png"
+                alt="Russian Travel preview"
+                class="project-thumb__img"
+              />
+              <span class="project-thumb__text">russian-travel</span>
+            </div>
+            <div class="project-info">
+              <h3><strong>russian-travel</strong></h3>
+              <p>
+                Проект: Путешествие по России. Адаптивная вёрстка, Grid,
+                Flexbox, чистый CSS.
+              </p>
+              <div class="tags">
+                <span>html</span><span>css</span><span>adaptive</span>
+              </div>
+              <div class="project-actions">
+                <hr class="project-actions__divider" />
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="window.open('https://github.com/SsulsS/russian-travel','_blank')"
+                  title="GitHub"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.867 8.166 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.37-1.342-3.37-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.646.35-1.088.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.025 2.747-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.135 20.174 22 16.426 22 12.012 22 6.484 17.523 2 12 2Z" fill="#222"/></svg>
+                  GitHub
+                </button>
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="alert('Ссылка на сайт недоступна в демо')"
+                  title="Сайт"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2"/><path d="M2 12h20M12 2c3.5 4.5 3.5 15 0 20M12 2c-3.5 4.5-3.5 15 0 20" stroke="#222" stroke-width="2"/></svg>
+                  Сайт
+                </button>
               </div>
             </div>
           </div>
 
           <div class="project-card project-card--hidden">
             <div class="project-thumb">
-              <span class="project-thumb__text">Скоро тут будут фото</span>
+              <span class="project-thumb__text">Ozon-EnteryTask</span>
             </div>
             <div class="project-info">
-              <h3>
-                <a
-                  href="https://github.com/SsulsS/portfolio"
-                  target="_blank"
-                  rel="noopener"
-                  ><strong>portfolio</strong></a
+              <h3><strong>Ozon-EnteryTask</strong></h3>
+              <p>Тестовое задание для Ozon.</p>
+              <div class="tags"><span>js</span></div>
+              <div class="project-actions">
+                <hr class="project-actions__divider" />
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="window.open('https://github.com/SsulsS/Ozon-EnteryTask','_blank')"
+                  title="GitHub"
                 >
-              </h3>
-              <p>
-                Личный сайт-портфолио. Современный дизайн, адаптивная вёрстка,
-                чистый код, BEM, SCSS, анимации.
-              </p>
-              <div class="tags">
-                <span>html</span>
-                <span>css</span>
-                <span>js</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.867 8.166 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.37-1.342-3.37-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.646.35-1.088.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.025 2.747-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.135 20.174 22 16.426 22 12.012 22 6.484 17.523 2 12 2Z" fill="#222"/></svg>
+                  GitHub
+                </button>
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="alert('Ссылка на сайт недоступна в демо')"
+                  title="Сайт"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2"/><path d="M2 12h20M12 2c3.5 4.5 3.5 15 0 20M12 2c-3.5 4.5-3.5 15 0 20" stroke="#222" stroke-width="2"/></svg>
+                  Сайт
+                </button>
               </div>
             </div>
           </div>
           <div class="project-card project-card--hidden">
             <div class="project-thumb">
-              <span class="project-thumb__text">Скоро тут будут фото</span>
+              <span class="project-thumb__text">movies-explorer-frontend</span>
             </div>
             <div class="project-info">
-              <h3>
-                <a
-                  href="https://github.com/SsulsS/react-burger"
-                  target="_blank"
-                  rel="noopener"
-                  ><strong>react-burger</strong></a
+              <h3><strong>movies-explorer-frontend</strong></h3>
+              <p>Фронтенд дипломного проекта: поиск и сохранение фильмов.</p>
+              <div class="tags"><span>react</span><span>css</span></div>
+              <div class="project-actions">
+                <hr class="project-actions__divider" />
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="window.open('https://github.com/SsulsS/movies-explorer-frontend','_blank')"
+                  title="GitHub"
                 >
-              </h3>
-              <p>
-                Учебный проект: сборка бургера, drag&drop, авторизация, работа с
-                WebSocket, тесты.
-              </p>
-              <div class="tags">
-                <span>react</span>
-                <span>redux</span>
-                <span>ws</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.867 8.166 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.37-1.342-3.37-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.646.35-1.088.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.025 2.747-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.135 20.174 22 16.426 22 12.012 22 6.484 17.523 2 12 2Z" fill="#222"/></svg>
+                  GitHub
+                </button>
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="alert('Ссылка на сайт недоступна в демо')"
+                  title="Сайт"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2"/><path d="M2 12h20M12 2c3.5 4.5 3.5 15 0 20M12 2c-3.5 4.5-3.5 15 0 20" stroke="#222" stroke-width="2"/></svg>
+                  Сайт
+                </button>
               </div>
             </div>
           </div>
           <div class="project-card project-card--hidden">
             <div class="project-thumb">
-              <span class="project-thumb__text">Скоро тут будут фото</span>
+              <span class="project-thumb__text">movies-explorer-api</span>
             </div>
             <div class="project-info">
-              <h3>
-                <a
-                  href="https://github.com/SsulsS/russian-travel"
-                  target="_blank"
-                  rel="noopener"
-                  ><strong>russian-travel</strong></a
+              <h3><strong>movies-explorer-api</strong></h3>
+              <p>Бэкенд дипломного проекта: API для фильмов.</p>
+              <div class="tags"><span>js</span><span>api</span></div>
+              <div class="project-actions">
+                <hr class="project-actions__divider" />
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="window.open('https://github.com/SsulsS/movies-explorer-api','_blank')"
+                  title="GitHub"
                 >
-              </h3>
-              <p>
-                Лендинг о путешествиях по России. Адаптивная вёрстка, Grid,
-                Flexbox, чистый CSS.
-              </p>
-              <div class="tags">
-                <span>html</span>
-                <span>css</span>
-                <span>adaptive</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.867 8.166 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.37-1.342-3.37-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.646.35-1.088.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.025 2.747-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.135 20.174 22 16.426 22 12.012 22 6.484 17.523 2 12 2Z" fill="#222"/></svg>
+                  GitHub
+                </button>
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="alert('Ссылка на сайт недоступна в демо')"
+                  title="Сайт"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2"/><path d="M2 12h20M12 2c3.5 4.5 3.5 15 0 20M12 2c-3.5 4.5-3.5 15 0 20" stroke="#222" stroke-width="2"/></svg>
+                  Сайт
+                </button>
               </div>
             </div>
           </div>
           <div class="project-card project-card--hidden">
             <div class="project-thumb">
-              <span class="project-thumb__text">Скоро тут будут фото</span>
+              <span class="project-thumb__text">react-mesto-api-full-gha</span>
             </div>
             <div class="project-info">
-              <h3>
-                <a
-                  href="https://github.com/SsulsS/how-to-learn"
-                  target="_blank"
-                  rel="noopener"
-                  ><strong>how-to-learn</strong></a
-                >
-              </h3>
-              <p>
-                Учебный проект: сайт о техниках обучения. Адаптивная вёрстка,
-                анимации, семантика.
-              </p>
+              <h3><strong>react-mesto-api-full-gha</strong></h3>
+              <p>Полный стек: React + Node.js + MongoDB.</p>
               <div class="tags">
-                <span>html</span>
-                <span>css</span>
-                <span>animation</span>
+                <span>react</span><span>nodejs</span><span>mongo</span>
+              </div>
+              <div class="project-actions">
+                <hr class="project-actions__divider" />
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="window.open('https://github.com/SsulsS/react-mesto-api-full-gha','_blank')"
+                  title="GitHub"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.867 8.166 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.37-1.342-3.37-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.646.35-1.088.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.025 2.747-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.135 20.174 22 16.426 22 12.012 22 6.484 17.523 2 12 2Z" fill="#222"/></svg>
+                  GitHub
+                </button>
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="alert('Ссылка на сайт недоступна в демо')"
+                  title="Сайт"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2"/><path d="M2 12h20M12 2c3.5 4.5 3.5 15 0 20M12 2c-3.5 4.5-3.5 15 0 20" stroke="#222" stroke-width="2"/></svg>
+                  Сайт
+                </button>
               </div>
             </div>
           </div>
           <div class="project-card project-card--hidden">
             <div class="project-thumb">
-              <span class="project-thumb__text">Скоро тут будут фото</span>
+              <span class="project-thumb__text">express-mesto-gha</span>
             </div>
             <div class="project-info">
-              <h3>
-                <a
-                  href="https://github.com/SsulsS/mesto"
-                  target="_blank"
-                  rel="noopener"
-                  ><strong>mesto</strong></a
-                >
-              </h3>
+              <h3><strong>express-mesto-gha</strong></h3>
               <p>
-                Учебный проект: галерея с лайками, попапами, валидацией форм и
-                работой с API.
+                Темплейт проектной работы курса Веб-разработчик
+                Яндекс.Практикум.
               </p>
-              <div class="tags">
-                <span>js</span>
-                <span>api</span>
-                <span>html</span>
+              <div class="tags"><span>nodejs</span><span>express</span></div>
+              <div class="project-actions">
+                <hr class="project-actions__divider" />
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="window.open('https://github.com/SsulsS/express-mesto-gha','_blank')"
+                  title="GitHub"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.867 8.166 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.37-1.342-3.37-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.646.35-1.088.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.025 2.747-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.135 20.174 22 16.426 22 12.012 22 6.484 17.523 2 12 2Z" fill="#222"/></svg>
+                  GitHub
+                </button>
+                <button
+                  class="project-btn project-btn--icon"
+                  onclick="alert('Ссылка на сайт недоступна в демо')"
+                  title="Сайт"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2"/><path d="M2 12h20M12 2c3.5 4.5 3.5 15 0 20M12 2c-3.5 4.5-3.5 15 0 20" stroke="#222" stroke-width="2"/></svg>
+                  Сайт
+                </button>
               </div>
             </div>
           </div>
