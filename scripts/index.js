@@ -31,40 +31,20 @@
     const hiddenCards = document.querySelectorAll('.project-card--hidden');
     let shown = false;
     if (btn) {
-      // Скрыть по умолчанию с анимацией
-      hiddenCards.forEach(card => {
-        card.style.maxHeight = '0';
-        card.style.overflow = 'hidden';
-        card.style.opacity = '0';
-        card.style.transition = 'max-height 0.5s cubic-bezier(.4,0,.2,1), opacity 0.5s cubic-bezier(.4,0,.2,1)';
-        card.style.display = 'block';
-      });
       btn.addEventListener('click', function() {
         if (!shown) {
           hiddenCards.forEach(card => {
-            card.style.display = 'block';
-            card.style.maxHeight = card.scrollHeight + 'px';
-            card.style.opacity = '1';
+            card.classList.remove('project-card--hidden');
           });
           btn.textContent = 'скрыть дополнительные проекты';
           shown = true;
         } else {
           hiddenCards.forEach(card => {
-            card.style.maxHeight = '0';
-            card.style.opacity = '0';
-            setTimeout(() => {
-              if (!shown) card.style.display = 'none';
-            }, 500);
+            card.classList.add('project-card--hidden');
           });
           btn.textContent = 'показать больше проектов';
           shown = false;
         }
       });
-      // Скрыть по умолчанию после первой отрисовки
-      setTimeout(() => {
-        hiddenCards.forEach(card => {
-          card.style.display = 'none';
-        });
-      }, 10);
     }
   });
